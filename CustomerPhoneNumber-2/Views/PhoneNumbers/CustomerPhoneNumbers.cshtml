@@ -1,0 +1,19 @@
+﻿@model CustomerPhoneNumber_2.Models.PhoneNumber
+
+@{
+    ViewBag.Title = "CustomerPhoneNumbers";
+}
+
+<h2>CustomerPhoneNumbers</h2>
+
+<div class="form-group">
+    @Html.Label("customerId", htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+         <div class="col-md-10">
+            @Html.DropDownList("customerId", "--Select")
+            @*@Html.EditorFor(model => model.TeamNAme, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TeamNAme, "", new { @class = "text-danger" })*@
+        </div>
+    </div>
+</div>
+
